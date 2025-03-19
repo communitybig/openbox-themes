@@ -1,22 +1,14 @@
-# Maintainer: Tales A. Mendonça <talesam@gmail.com>
+# Maintainer: Leonardo Berbert <leo4berbert@gmail.com>
 
-pkgname=pkgbuild-template
-pkgdesc="Package template for Communitybig"
-# Uncomment and edit the following lines as needed
-#depends=('')
-#makedepends=('')
-#optdepends=('')
-#conflicts=('')
-#provides=('')
-#replaces=('')
-pkgver=$(date +%Y%m%d)
+pkgname=openbox-themes
+pkgdesc="Openbox Themes"
+pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
-license=('MIT')
+license=('GPL')
 url="https://github.com/communitybig/${pkgname}"
 source=("git+${url}.git")
 md5sums=('SKIP')
-
 # Automatically detect and use the correct install file
 if [ -e "${pkgname}.install" ]; then
     install=${pkgname}.install
